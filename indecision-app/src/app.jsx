@@ -1,23 +1,19 @@
 // JSX
 
-var template = (
+const app = {
+    title: "Indecision App",
+    subtitle: "What Do You Want To Do?"
+};
+
+let template = (
     <div>
-        <h1>Indecision App</h1>
-        <p>This is Some Info</p>
-        <ol>
-            <li>one</li>
-            <li>two</li>
-        </ol>
+        <h1>{app.title}</h1>
+        <p>{app.subtitle}</p>
+
     </div>
 );
 
-let templateTwo = (
-    <div>
-        <h1>Matthew Brown</h1>
-        <p>Location: Bristol</p>
-    </div>
-);
 
 var approot = document.getElementById("app");
 
-ReactDOM.render(templateTwo, approot);
+ReactDOM.render(template, approot);

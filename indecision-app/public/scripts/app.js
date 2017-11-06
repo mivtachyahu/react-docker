@@ -2,50 +2,26 @@
 
 // JSX
 
+var app = {
+    title: "Indecision App",
+    subtitle: "What Do You Want To Do?"
+};
+
 var template = React.createElement(
     "div",
     null,
     React.createElement(
         "h1",
         null,
-        "Indecision App"
+        app.title
     ),
     React.createElement(
         "p",
         null,
-        "This is Some Info"
-    ),
-    React.createElement(
-        "ol",
-        null,
-        React.createElement(
-            "li",
-            null,
-            "one"
-        ),
-        React.createElement(
-            "li",
-            null,
-            "two"
-        )
-    )
-);
-
-var templateTwo = React.createElement(
-    "div",
-    null,
-    React.createElement(
-        "h1",
-        null,
-        "Matthew Brown"
-    ),
-    React.createElement(
-        "p",
-        null,
-        "Location: Bristol"
+        app.subtitle
     )
 );
 
 var approot = document.getElementById("app");
 
-ReactDOM.render(templateTwo, approot);
+ReactDOM.render(template, approot);
