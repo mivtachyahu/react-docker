@@ -6,6 +6,10 @@
   "repository": "https://github.com/mivtachyahu/react-docker",
   "author": "Matthew Brown",
   "license": "MIT",
+  "scripts": { 
+    "babel-watch" : "babel src/app.jsx --out-file=public/scripts/app.js --presets=env,react --watch",
+    "live-server" : "live-server public"         
+   },
   "dependencies": {
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1"
